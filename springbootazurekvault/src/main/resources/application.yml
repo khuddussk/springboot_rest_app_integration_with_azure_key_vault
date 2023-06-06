@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    azure:
+      keyvault:
+        secret:
+          property-source-enabled: true
+          property-sources[0]:
+            credential:
+              client-secret: _cC8Q~-rXo_qjU4HuaGjaBTbAGIyt1QVs2H65atz
+              client-id: 34ac387d-e603-47e3-a29c-2722c57951a3
+            profile:
+              tenant-id: 0ddf288a-c736-4629-ad58-6a4156c7f546
+            endpoint: https://sbkvnew.vault.azure.net
+
+  jpa: 
+    hibernate:
+     ddl-auto: ${spring-jpa-hibernate-ddl-auto}
+    show-sql: ${spring-jpa-show-sql}
+    
+    
